@@ -1,25 +1,14 @@
 import java.util.function.BiFunction;
 import java.util.function.Function;
+import java.util.function.IntPredicate;
 
 public class Lambda {
 
-    /**
-     * Function to get max value.
-     *
-     * @return lambda expression.
-     */
-    public static BiFunction<Double, Double, Double> getMax() {
-        // TODO replace null with lambda expression
-        return null;
-    }
+  public static BiFunction<Double, Double, Double> getMax() {
+    return (a, b) -> Math.max(a, b);
+  }
 
-    /**
-     * Function to get square root.
-     *
-     * @return lambda expression.
-     */
-    public static Function<Double, Double> getSqrt() {
-        // TODO replace null with method reference
-        return null;
-    }
+  public static Function<Double, Double> getSqrt() {
+    return Math::sqrt;
+  }
 }
